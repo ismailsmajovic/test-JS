@@ -82,4 +82,21 @@ const secondTask = (arr) => {
 
 console.log(secondTask(CART_DATA));
 
+/* 
+const secondTask = (arr) => {
+    const len = arr.length;
+    const shippingCost = 320;
+    const namePrice = arr.map((value) => {
+        return {
+            name: value.name, totalPrice: value.price * value.amount
+        }
+    });
+    const sum = namePrice.map((value) => value.totalPrice).reduce((prevValue, currValue) => prevValue + currValue, 320)
+    // return sum;
+    return `You got ${len} in cart, shipping cost is ${shippingCost}, your total is ${sum}`
+};
+
+console.log(secondTask(CART_DATA));
+*/
+
 

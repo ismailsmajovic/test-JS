@@ -1,10 +1,10 @@
 const firstZADtak= ()=>{
-    let broj = prompt('inestite broj');
+    let broj = prompt('unesite broj');
 
-    if (broj) {
+    if (+broj) {
         return console.log(broj * broj)
     }else {
-        return console.log('greka')
+        return console.log('greska')
     }
 }
 

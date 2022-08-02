@@ -13,9 +13,16 @@ const thirdTask = async () => {
     const prvi = await fetch("https://reqres.in/api/users?page=2");
     const korisnici = await prvi.json();
     return korisnici;
-};
+}
 
-thirdTask()  
+thirdTask()
+     //.then((arg2) => arg2)
+    //.then((arg)=> console.log(arg))
+    //.catch(()=> `this is problem`);
+
     .then((arg1) => arg1)
     .then((arg2) => console.log(arg2.data))
     .catch(() => `Ovo je problem.`)
+    
+
+    
